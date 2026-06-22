@@ -53,7 +53,7 @@ const getAllData = async (page = 1) => {
     }
 
     const res = await fetch(
-      `http://localhost:5000/api/alldata?${query.toString()}`,
+      `https://codevectortask-backend.onrender.com/api/alldata?${query.toString()}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -87,7 +87,7 @@ const getAllData = async (page = 1) => {
         limit: String(LIMIT),
       });
 
-      const res = await fetch(`http://localhost:5000/api/alldata?${query.toString()}`, {
+      const res = await fetch(`https://codevectortask-backend.onrender.com/api/alldata?${query.toString()}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });
@@ -124,7 +124,7 @@ const getsearchData = async () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/api/Add", {
+      const res = await fetch("https://codevectortask-backend.onrender.com/api/Add", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(add_data),
@@ -154,7 +154,7 @@ const getsearchData = async () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/api/update", {
+      const res = await fetch("https://codevectortask-backend.onrender.com/api/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(Update_data),
